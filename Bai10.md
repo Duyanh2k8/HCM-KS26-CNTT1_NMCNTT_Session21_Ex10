@@ -21,16 +21,16 @@ Quy trình xử lý khi Kiosk VoltCharge xuất hiện thông báo lỗi:
 #### Luồng xử lý tổng quát
 ```mermaid
 flowchart TD
-    A(["BẮT ĐẦU: Kiosk xuất hiện Error Pop-up"])
-    B["CHẶNG 1: Bóc tách từ khóa<br/>Google Operators: site:, dấu ngoặc kép, -"]
+    A(["<b>BẮT ĐẦU</b></br>Kiosk xuất hiện Error Pop-up"])
+    B["<b>CHẶNG 1 - Bóc tách từ khóa</b><br/>Google Operators: site:, dấu ngoặc kép, -"]
     C{"Tìm thấy kết quả<br/>StackOverflow / GitHub?"}
-    D["CHẶNG 2: Đọc lướt 30 giây<br/>Kiểm tra Accepted Answer ✓ và Upvote"]
-    E["CHẶNG 3: Gửi Prompt 3 thành phần<br/>Context + Raw Error + Instruction"]
+    D["<b>CHẶNG 2 - Đọc lướt 30 giây</b><br/>Kiểm tra Accepted Answer ✓ và Upvote"]
+    E["<b>CHẶNG 3 - Gửi Prompt 3 thành phần</b><br/>Context + Raw Error + Instruction"]
     F["AI giải thích lỗi và đề xuất giải pháp"]
     G["Thử tối đa 2 giải pháp phù hợp<br/>Trong thời hạn 15 phút"]
     H{"Sự cố đã được<br/>khắc phục?"}
     I["Kiểm tra lại hệ thống<br/>Ghi nhận cách sửa vào Wiki"]
-    J["CHẶNG 4: Lập Bug Report<br/>Gửi IT Helpdesk cấp 2"]
+    J["<b>CHẶNG 4 - Lập Bug Report</b><br/>Gửi IT Helpdesk cấp 2"]
     K(["KẾT THÚC"])
 
     A --> B
